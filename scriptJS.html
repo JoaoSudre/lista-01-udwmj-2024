@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usabilidade - Mudança de Cor</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .color-btn {
+            margin: 5px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>  
+<h1>Bem-vindo ao Hospital Aula de usabilidade</h1>
+<p>Escolha uma cor de fundo para a página:</p>
+
+<button style="background-color: rgb(122, 218, 122);"  onclick="mCorV()">
+    Verde claro
+</button>
+<button style="background-color: rgb(122, 191, 218);"  onclick="mCorA()">
+    Azul claro
+</button>
+<button style="background-color: rgb(243, 156, 115);"  onclick="mCorL()">
+    Laranja claro
+</button>
+
+<h2 id="GFG" style="color:rgb(122, 218, 122);"></h2>
+
+<script>
+    let result = document.getElementById("GFG");
+
+function changeColor(color) {
+    document.body.style.background = color;
+}
+function mCorV() {
+    changeColor('rgb(122, 218, 122)');
+    result.innerHTML ="<span style='color:black;'>Cor de fundo alterada"
+}        
+function mCorA() {
+    changeColor('rgb(122, 191, 218)');
+    result.innerHTML ="<span style='color:black;'>Cor de fundo alterada"
+}        
+function mCorL() {
+    changeColor('rgb(243, 156, 115)');
+    result.innerHTML ="<span style='color:black;'>Cor de fundo alterada"
+}        
+</script>
+</body>
+</h
